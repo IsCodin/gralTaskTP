@@ -1,0 +1,27 @@
+PROGRAM generalTask
+
+%COMMENT = 'General Operations'
+%ALPHABETIZE
+%INCLUDE KLEVKEYS
+%INCLUDE KLEVKMSK
+%INCLUDE KLEVCCDF
+%INCLUDE KLIOUOP
+%INCLUDE KLIOTYPS
+
+ROUTINE TP_CLS
+    VAR
+        inicio : INTEGER
+
+BEGIN
+    FOR inicio = 0 TO 4 DO
+        WRITE(CR,'                                  ', CR)    
+    ENDFOR
+
+    FORCE_SPMENU(TP_PANEL, SPI_TPUSER, 1)
+END TP_CLS
+----------------------------------------------------
+-- BEGIN generalTask                             
+----------------------------------------------------
+BEGIN
+    
+END generalTask
